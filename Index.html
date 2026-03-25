@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="Css/style.css">
+    <title>Registro de Alumnos</title>
+</head>
+<body>
+
+    <header>
+               <img id="logo" src="img/Img 3.png" alt="imagen promocional" width="170" height="120">
+    </header>
+
+    <section>
+
+<h2>Registro de Alumnos</h2>
+
+<form action="procesar.php" method="POST">
+    
+    <label>Nombre:</label><br>
+    <input type="text" name="nombre" required><br><br>
+
+    <label>Correo:</label><br>
+    <input type="email" name="correo" required><br><br>
+
+    <label>Edad:</label><br>
+    <input type="number" name="edad" required><br><br>
+
+    <label>Género:</label><br>
+    <select name="genero">
+        <option>Masculino</option>
+        <option>Femenino</option>
+    </select><br><br>
+
+    <label>Carrera:</label><br>
+    <input type="text" name="carrera" required><br><br>
+
+    <label>Comentario:</label><br>
+    <textarea name="comentario"></textarea><br><br>
+
+    <button type="submit">Guardar</button>
+
+</form>
+</section>
+</body>
+</html>
